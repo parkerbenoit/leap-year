@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/scripts.js"></script>
 <head>
@@ -14,10 +13,13 @@
     </div>
     <div class="container">
         <form id="leapYear">
-        <label for="name">Enter the year:</label>
-        <input type="text" id="year">
-        <button type="button" class="btn">Submit</button>
+          <label for="userYear">Enter the year:</label>
+          <input type="numbers" class="form-control" id="year">
+          <button type="submit">Submit</button>
         </form>
-    </div>    
+    </div> 
+    <div id="output">
+        <p><span class="boolean"></span></p>
+    </div>
 </body>
 </html>
