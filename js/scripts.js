@@ -9,10 +9,10 @@ function isLeapYear(year) {
 
 //UI Logic
 $(document).ready(function() {
-    $("form.leapYear").click(function(event) {
-      let year = $("input.userYear").val();
+    $("form#leapYear").click(function(event) {
+    event.preventDefault();
+      let year = $("input#year").val();
       const boolean = isLeapYear(year);
-      $(".return").text(boolean);
-      event.preventDefault();
+      $("#output").text(boolean);
    });
 });
